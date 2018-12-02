@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="EatersCell" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="EatersCell" customModule="Eaters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-CS-s85">
+                        <rect key="frame" x="12" y="10" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="M8a-jl-lch"/>
+                            <constraint firstAttribute="width" constant="65" id="im5-lc-RRb"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LrR-Xc-OOV">
+                        <rect key="frame" x="89" y="10" width="219" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23d-91-8fS">
+                                <rect key="frame" x="0.0" y="0.0" width="219" height="21.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-VW-UTo">
+                                <rect key="frame" x="0.0" y="21.5" width="219" height="21.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMg-pg-ery">
+                                <rect key="frame" x="0.0" y="43" width="219" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="23d-91-8fS" firstAttribute="top" secondItem="LrR-Xc-OOV" secondAttribute="top" id="mH1-y4-8vS"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LrR-Xc-OOV" firstAttribute="height" secondItem="Oj4-CS-s85" secondAttribute="height" id="3li-UY-Prm"/>
+                    <constraint firstItem="LrR-Xc-OOV" firstAttribute="leading" secondItem="Oj4-CS-s85" secondAttribute="trailing" constant="12" id="5cu-va-IPu"/>
+                    <constraint firstAttribute="trailing" secondItem="LrR-Xc-OOV" secondAttribute="trailing" constant="12" id="Fuh-HG-jxL"/>
+                    <constraint firstItem="LrR-Xc-OOV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h8X-uF-f5N"/>
+                    <constraint firstItem="Oj4-CS-s85" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="hyd-yl-uJ0"/>
+                    <constraint firstItem="Oj4-CS-s85" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iLc-bf-DSQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LName" destination="23d-91-8fS" id="PNG-HL-A4B"/>
+                <outlet property="Llocation" destination="gkG-VW-UTo" id="YVJ-L1-zUZ"/>
+                <outlet property="Ltype" destination="RMg-pg-ery" id="HQS-5Y-hyL"/>
+                <outlet property="icon" destination="Oj4-CS-s85" id="Q6f-mv-KPI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

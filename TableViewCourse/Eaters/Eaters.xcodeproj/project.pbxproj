@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A0821B32F320064CFB1 /* AppDelegate.swift */; };
-		48FE0A0B21B32F320064CFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A0A21B32F320064CFB1 /* ViewController.swift */; };
 		48FE0A0E21B32F320064CFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0C21B32F320064CFB1 /* Main.storyboard */; };
 		48FE0A1021B32F350064CFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0F21B32F350064CFB1 /* Assets.xcassets */; };
 		48FE0A1321B32F350064CFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A1121B32F350064CFB1 /* LaunchScreen.storyboard */; };
 		48FE0A1E21B32F350064CFB1 /* EatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A1D21B32F350064CFB1 /* EatersTests.swift */; };
 		48FE0A2921B32F350064CFB1 /* EatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A2821B32F350064CFB1 /* EatersUITests.swift */; };
+		48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3721B330640064CFB1 /* EatersModelOutput.swift */; };
+		48FE0A4021B330640064CFB1 /* EatersViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3821B330640064CFB1 /* EatersViewControllerInput.swift */; };
+		48FE0A4121B330640064CFB1 /* EatersModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3921B330640064CFB1 /* EatersModuleInitializer.swift */; };
+		48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3A21B330640064CFB1 /* EatersViewController.swift */; };
+		48FE0A4321B330640064CFB1 /* EatersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3B21B330640064CFB1 /* EatersView.swift */; };
+		48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3C21B330640064CFB1 /* EatersModel.swift */; };
+		48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3D21B330640064CFB1 /* EatersModelInput.swift */; };
+		48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3E21B330640064CFB1 /* EatersModuleConfigurator.swift */; };
+		48FE0A4C21B330BF0064CFB1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A4B21B330BF0064CFB1 /* DataSource.swift */; };
+		48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A4E21B332F60064CFB1 /* EatersCell.swift */; };
+		48FE0A5121B332F60064CFB1 /* EatersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A4F21B332F60064CFB1 /* EatersCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,6 @@
 /* Begin PBXFileReference section */
 		48FE0A0521B32F310064CFB1 /* Eaters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eaters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FE0A0821B32F320064CFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		48FE0A0A21B32F320064CFB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48FE0A0D21B32F320064CFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48FE0A0F21B32F350064CFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FE0A1221B32F350064CFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,17 @@
 		48FE0A2421B32F350064CFB1 /* EatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FE0A2821B32F350064CFB1 /* EatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersUITests.swift; sourceTree = "<group>"; };
 		48FE0A2A21B32F350064CFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FE0A3721B330640064CFB1 /* EatersModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModelOutput.swift; sourceTree = "<group>"; };
+		48FE0A3821B330640064CFB1 /* EatersViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersViewControllerInput.swift; sourceTree = "<group>"; };
+		48FE0A3921B330640064CFB1 /* EatersModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModuleInitializer.swift; sourceTree = "<group>"; };
+		48FE0A3A21B330640064CFB1 /* EatersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersViewController.swift; sourceTree = "<group>"; };
+		48FE0A3B21B330640064CFB1 /* EatersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersView.swift; sourceTree = "<group>"; };
+		48FE0A3C21B330640064CFB1 /* EatersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModel.swift; sourceTree = "<group>"; };
+		48FE0A3D21B330640064CFB1 /* EatersModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModelInput.swift; sourceTree = "<group>"; };
+		48FE0A3E21B330640064CFB1 /* EatersModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModuleConfigurator.swift; sourceTree = "<group>"; };
+		48FE0A4B21B330BF0064CFB1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		48FE0A4E21B332F60064CFB1 /* EatersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersCell.swift; sourceTree = "<group>"; };
+		48FE0A4F21B332F60064CFB1 /* EatersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EatersCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +117,9 @@
 		48FE0A0721B32F310064CFB1 /* Eaters */ = {
 			isa = PBXGroup;
 			children = (
+				48FE0A4D21B332C60064CFB1 /* Views */,
+				48FE0A3621B330460064CFB1 /* Modules */,
 				48FE0A0821B32F320064CFB1 /* AppDelegate.swift */,
-				48FE0A0A21B32F320064CFB1 /* ViewController.swift */,
 				48FE0A0C21B32F320064CFB1 /* Main.storyboard */,
 				48FE0A0F21B32F350064CFB1 /* Assets.xcassets */,
 				48FE0A1121B32F350064CFB1 /* LaunchScreen.storyboard */,
@@ -123,6 +144,63 @@
 				48FE0A2A21B32F350064CFB1 /* Info.plist */,
 			);
 			path = EatersUITests;
+			sourceTree = "<group>";
+		};
+		48FE0A3621B330460064CFB1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A4721B330730064CFB1 /* Model */,
+				48FE0A4821B3307D0064CFB1 /* Controller */,
+				48FE0A4921B3308B0064CFB1 /* Configurator */,
+				48FE0A4A21B330950064CFB1 /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		48FE0A4721B330730064CFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A3D21B330640064CFB1 /* EatersModelInput.swift */,
+				48FE0A3721B330640064CFB1 /* EatersModelOutput.swift */,
+				48FE0A3C21B330640064CFB1 /* EatersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FE0A4821B3307D0064CFB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A3821B330640064CFB1 /* EatersViewControllerInput.swift */,
+				48FE0A3A21B330640064CFB1 /* EatersViewController.swift */,
+				48FE0A4B21B330BF0064CFB1 /* DataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48FE0A4921B3308B0064CFB1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A3921B330640064CFB1 /* EatersModuleInitializer.swift */,
+				48FE0A3E21B330640064CFB1 /* EatersModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48FE0A4A21B330950064CFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A3B21B330640064CFB1 /* EatersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FE0A4D21B332C60064CFB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A4E21B332F60064CFB1 /* EatersCell.swift */,
+				48FE0A4F21B332F60064CFB1 /* EatersCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +310,7 @@
 				48FE0A1321B32F350064CFB1 /* LaunchScreen.storyboard in Resources */,
 				48FE0A1021B32F350064CFB1 /* Assets.xcassets in Resources */,
 				48FE0A0E21B32F320064CFB1 /* Main.storyboard in Resources */,
+				48FE0A5121B332F60064CFB1 /* EatersCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FE0A0B21B32F320064CFB1 /* ViewController.swift in Sources */,
+				48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */,
+				48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */,
+				48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */,
+				48FE0A4121B330640064CFB1 /* EatersModuleInitializer.swift in Sources */,
+				48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */,
+				48FE0A4321B330640064CFB1 /* EatersView.swift in Sources */,
+				48FE0A4021B330640064CFB1 /* EatersViewControllerInput.swift in Sources */,
 				48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */,
+				48FE0A4C21B330BF0064CFB1 /* DataSource.swift in Sources */,
+				48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */,
+				48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
