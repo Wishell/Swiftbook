@@ -11,7 +11,7 @@ import UIKit
 class EatersDataSource: NSObject {
     
     var restaurants: [Restaurant] = [
-        Restaurant(name: "Ogonёk Grill&Bar", type: "ресторан", location: "Уфа", image: "ogonek.jpg", isVisited: false),
+        Restaurant(name: "Ogonёk Grill&Bar", type: "ресторан", location: "Уфа, бульвар ываывааавввввывыаываываывавпроывы ываывароывпраофпрфоыдароыфдр" , image: "ogonek.jpg", isVisited: false),
         Restaurant(name: "Елу", type: "ресторан", location: "Уфа", image: "elu.jpg", isVisited: false),
         Restaurant(name: "Bonsai", type: "ресторан", location: "Уфа", image: "bonsai.jpg", isVisited: false),
         Restaurant(name: "Дастархан", type: "ресторан", location: "Уфа", image: "dastarhan.jpg", isVisited: false),
@@ -32,6 +32,8 @@ class EatersDataSource: NSObject {
         table.dataSource = self
         let nib = UINib(nibName: "EatersCell", bundle: nil)
         table.register(nib, forCellReuseIdentifier: "EatersCell")
+        table.estimatedRowHeight = 85
+        table.rowHeight = UITableView.automaticDimension
     }
     
 

@@ -7,5 +7,5 @@
 //
 
 protocol DetailsViewControllerInput: class {
-    func setData(_ imageName: String)
+    func setData(_ restaurant: Restaurant)
 }

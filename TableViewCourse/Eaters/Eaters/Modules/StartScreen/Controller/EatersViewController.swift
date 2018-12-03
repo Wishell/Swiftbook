@@ -21,10 +21,14 @@ final class EatersViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetailsSeque" {
             let destinationVc = segue.destination as! DetailsViewController
-            destinationVc.setData(sender as! String)
+            destinationVc.setData(sender as! Restaurant)
         }
     }
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        
+    }
+
 }
 
 // MARK: - EatersModelOutput
@@ -62,7 +66,7 @@ extension EatersViewController: UITableViewDelegate {
 //        present(alertController, animated: true, completion: nil)
         
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "DetailsSeque", sender: dataSource?.restaurants[indexPath.row].image)
+        performSegue(withIdentifier: "DetailsSeque", sender: dataSource?.restaurants[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {

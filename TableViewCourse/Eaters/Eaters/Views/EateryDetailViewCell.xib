@@ -20,16 +20,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NHA-nO-AA9">
-                        <rect key="frame" x="20" y="10.5" width="280" height="23"/>
+                        <rect key="frame" x="20" y="10.5" width="280" height="22.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e3-cR-MMl">
-                                <rect key="frame" x="0.0" y="0.0" width="93" height="23"/>
+                                <rect key="frame" x="0.0" y="0.0" width="93" height="22.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoT-iq-u2j">
-                                <rect key="frame" x="94" y="0.0" width="186" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoT-iq-u2j">
+                                <rect key="frame" x="94" y="0.0" width="186" height="22.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,9 +43,12 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="NHA-nO-AA9" secondAttribute="trailing" constant="20" id="3ke-qF-ztE"/>
                     <constraint firstItem="NHA-nO-AA9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cWY-1Y-SoL"/>
+                    <constraint firstAttribute="bottom" secondItem="NHA-nO-AA9" secondAttribute="bottom" constant="10.5" id="eob-KZ-2sy"/>
+                    <constraint firstItem="NHA-nO-AA9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10.5" id="t4s-dH-fLm"/>
                     <constraint firstItem="NHA-nO-AA9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uHn-F7-c0e"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="keyField" destination="8e3-cR-MMl" id="vxd-wf-aip"/>

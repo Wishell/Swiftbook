@@ -62,17 +62,31 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Uw-zE-OWB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.87058823529999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.2685914854" green="0.41618245329999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CEJ-04-vHa">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxx-sE-iaw">
+                                <rect key="frame" x="325" y="69" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sxx-sE-iaw" secondAttribute="height" multiplier="1:1" id="5Wg-wF-tb4"/>
+                                    <constraint firstAttribute="height" constant="45" id="sOr-Ud-clj"/>
+                                </constraints>
+                                <state key="normal" image="good"/>
+                                <connections>
+                                    <segue destination="dIC-ep-E1f" kind="showDetail" id="WP3-Rw-nlh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Uw-zE-OWB" firstAttribute="leading" secondItem="jVf-fW-4s6" secondAttribute="leading" id="ClA-8G-2e8"/>
                             <constraint firstItem="jVf-fW-4s6" firstAttribute="trailing" secondItem="6Uw-zE-OWB" secondAttribute="trailing" id="FOo-nC-bXV"/>
+                            <constraint firstItem="jVf-fW-4s6" firstAttribute="trailing" secondItem="sxx-sE-iaw" secondAttribute="trailing" constant="5" id="RUd-nF-1g7"/>
+                            <constraint firstItem="sxx-sE-iaw" firstAttribute="top" secondItem="jVf-fW-4s6" secondAttribute="top" constant="5" id="ZfA-OK-W53"/>
                             <constraint firstItem="6Uw-zE-OWB" firstAttribute="top" secondItem="jVf-fW-4s6" secondAttribute="top" id="yoc-x7-4aS"/>
                             <constraint firstItem="jVf-fW-4s6" firstAttribute="bottom" secondItem="6Uw-zE-OWB" secondAttribute="bottom" id="z3A-TU-oBN"/>
                         </constraints>
@@ -80,6 +94,7 @@
                         <connections>
                             <outlet property="bigImage" destination="CEJ-04-vHa" id="bPX-1y-lsF"/>
                             <outlet property="detailsTable" destination="6Uw-zE-OWB" id="xca-w4-pqv"/>
+                            <outlet property="rateButton" destination="sxx-sE-iaw" id="5xW-Iq-U2h"/>
                         </connections>
                     </view>
                 </viewController>
@@ -90,7 +105,43 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1366" y="26"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="25.637181409295355"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="luu-o9-c3q">
+            <objects>
+                <viewController id="dIC-ep-E1f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rVJ-sN-2GT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rateBackground" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-I4-cYp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdG-cu-0Qc">
+                                <rect key="frame" x="320" y="25" width="50" height="50"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <segue destination="tBZ-9M-SzJ" kind="unwind" unwindAction="unwindFor:towards:" id="FLW-MC-EGE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5cq-GU-Myq" firstAttribute="trailing" secondItem="LdG-cu-0Qc" secondAttribute="trailing" constant="5" id="1bn-PE-Xx7"/>
+                            <constraint firstItem="PQE-I4-cYp" firstAttribute="top" secondItem="5cq-GU-Myq" secondAttribute="top" id="Azk-gZ-DKW"/>
+                            <constraint firstItem="5cq-GU-Myq" firstAttribute="bottom" secondItem="PQE-I4-cYp" secondAttribute="bottom" id="HBF-sZ-YzH"/>
+                            <constraint firstItem="LdG-cu-0Qc" firstAttribute="top" secondItem="5cq-GU-Myq" secondAttribute="top" constant="5" id="XQf-Hs-V58"/>
+                            <constraint firstItem="5cq-GU-Myq" firstAttribute="trailing" secondItem="PQE-I4-cYp" secondAttribute="trailing" id="sJs-0i-sfY"/>
+                            <constraint firstItem="PQE-I4-cYp" firstAttribute="leading" secondItem="5cq-GU-Myq" secondAttribute="leading" id="tSW-YY-LGz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5cq-GU-Myq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMX-lA-que" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tBZ-9M-SzJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2095.1999999999998" y="35.532233883058474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wgx-h5-YBw">
@@ -100,8 +151,19 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rsn-9j-Fb2">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NVU-TR-mm3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iHZ-HG-2H9"/>
                     </connections>
@@ -111,4 +173,9 @@
             <point key="canvasLocation" x="-34" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="close" width="50" height="50"/>
+        <image name="good" width="85" height="85"/>
+        <image name="rateBackground" width="200" height="286"/>
+    </resources>
 </document>

@@ -18,7 +18,13 @@ final class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         contentView.SetImage(image: imageName ?? "")
         datasource.attach(table: contentView.tableView)
+        title = datasource.restaurant?.name
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        navigationController?.hidesBarsOnSwipe = false
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//    }
     
 }
 
@@ -28,8 +34,9 @@ extension DetailsViewController: DetailsModelOutput {}
 // MARK: - DetailsViewControllerInput
 extension DetailsViewController: DetailsViewControllerInput {
     
-    func setData(_ imageName: String) {
-        self.imageName = imageName
+    func setData(_ restaurant: Restaurant) {
+        self.datasource.restaurant = restaurant
+        self.imageName = restaurant.image
     }
     
 }
