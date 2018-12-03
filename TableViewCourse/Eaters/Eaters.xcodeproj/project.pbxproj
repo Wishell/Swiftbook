@@ -21,9 +21,21 @@
 		48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3C21B330640064CFB1 /* EatersModel.swift */; };
 		48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3D21B330640064CFB1 /* EatersModelInput.swift */; };
 		48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A3E21B330640064CFB1 /* EatersModuleConfigurator.swift */; };
-		48FE0A4C21B330BF0064CFB1 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A4B21B330BF0064CFB1 /* DataSource.swift */; };
+		48FE0A4C21B330BF0064CFB1 /* EatersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A4B21B330BF0064CFB1 /* EatersDataSource.swift */; };
 		48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A4E21B332F60064CFB1 /* EatersCell.swift */; };
 		48FE0A5121B332F60064CFB1 /* EatersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A4F21B332F60064CFB1 /* EatersCell.xib */; };
+		48FE0A6021B5AB070064CFB1 /* DetailsModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5821B5AB070064CFB1 /* DetailsModelOutput.swift */; };
+		48FE0A6121B5AB070064CFB1 /* DetailsViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5921B5AB070064CFB1 /* DetailsViewControllerInput.swift */; };
+		48FE0A6221B5AB070064CFB1 /* DetailsModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5A21B5AB070064CFB1 /* DetailsModuleInitializer.swift */; };
+		48FE0A6321B5AB070064CFB1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5B21B5AB070064CFB1 /* DetailsViewController.swift */; };
+		48FE0A6421B5AB070064CFB1 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5C21B5AB070064CFB1 /* DetailsView.swift */; };
+		48FE0A6521B5AB070064CFB1 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5D21B5AB070064CFB1 /* DetailsModel.swift */; };
+		48FE0A6621B5AB070064CFB1 /* DetailsModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5E21B5AB070064CFB1 /* DetailsModelInput.swift */; };
+		48FE0A6721B5AB070064CFB1 /* DetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A5F21B5AB070064CFB1 /* DetailsModuleConfigurator.swift */; };
+		48FE0A6D21B5B2430064CFB1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A6C21B5B2430064CFB1 /* Restaurant.swift */; };
+		48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A6E21B5B79C0064CFB1 /* EateryDetailViewCell.swift */; };
+		48FE0A7121B5B79C0064CFB1 /* EateryDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A6F21B5B79C0064CFB1 /* EateryDetailViewCell.xib */; };
+		48FE0A7321B5BA490064CFB1 /* DetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7221B5BA490064CFB1 /* DetailsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +76,21 @@
 		48FE0A3C21B330640064CFB1 /* EatersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModel.swift; sourceTree = "<group>"; };
 		48FE0A3D21B330640064CFB1 /* EatersModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModelInput.swift; sourceTree = "<group>"; };
 		48FE0A3E21B330640064CFB1 /* EatersModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersModuleConfigurator.swift; sourceTree = "<group>"; };
-		48FE0A4B21B330BF0064CFB1 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		48FE0A4B21B330BF0064CFB1 /* EatersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersDataSource.swift; sourceTree = "<group>"; };
 		48FE0A4E21B332F60064CFB1 /* EatersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatersCell.swift; sourceTree = "<group>"; };
 		48FE0A4F21B332F60064CFB1 /* EatersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EatersCell.xib; sourceTree = "<group>"; };
+		48FE0A5821B5AB070064CFB1 /* DetailsModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModelOutput.swift; sourceTree = "<group>"; };
+		48FE0A5921B5AB070064CFB1 /* DetailsViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerInput.swift; sourceTree = "<group>"; };
+		48FE0A5A21B5AB070064CFB1 /* DetailsModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleInitializer.swift; sourceTree = "<group>"; };
+		48FE0A5B21B5AB070064CFB1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		48FE0A5C21B5AB070064CFB1 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		48FE0A5D21B5AB070064CFB1 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		48FE0A5E21B5AB070064CFB1 /* DetailsModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModelInput.swift; sourceTree = "<group>"; };
+		48FE0A5F21B5AB070064CFB1 /* DetailsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleConfigurator.swift; sourceTree = "<group>"; };
+		48FE0A6C21B5B2430064CFB1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		48FE0A6E21B5B79C0064CFB1 /* EateryDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryDetailViewCell.swift; sourceTree = "<group>"; };
+		48FE0A6F21B5B79C0064CFB1 /* EateryDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EateryDetailViewCell.xib; sourceTree = "<group>"; };
+		48FE0A7221B5BA490064CFB1 /* DetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +148,7 @@
 				48FE0A0F21B32F350064CFB1 /* Assets.xcassets */,
 				48FE0A1121B32F350064CFB1 /* LaunchScreen.storyboard */,
 				48FE0A1421B32F350064CFB1 /* Info.plist */,
+				48FE0A6C21B5B2430064CFB1 /* Restaurant.swift */,
 			);
 			path = Eaters;
 			sourceTree = "<group>";
@@ -149,10 +174,8 @@
 		48FE0A3621B330460064CFB1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				48FE0A4721B330730064CFB1 /* Model */,
-				48FE0A4821B3307D0064CFB1 /* Controller */,
-				48FE0A4921B3308B0064CFB1 /* Configurator */,
-				48FE0A4A21B330950064CFB1 /* View */,
+				48FE0A5721B5AAF10064CFB1 /* Details */,
+				48FE0A5621B5AAA20064CFB1 /* StartScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -172,7 +195,7 @@
 			children = (
 				48FE0A3821B330640064CFB1 /* EatersViewControllerInput.swift */,
 				48FE0A3A21B330640064CFB1 /* EatersViewController.swift */,
-				48FE0A4B21B330BF0064CFB1 /* DataSource.swift */,
+				48FE0A4B21B330BF0064CFB1 /* EatersDataSource.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,8 +222,69 @@
 			children = (
 				48FE0A4E21B332F60064CFB1 /* EatersCell.swift */,
 				48FE0A4F21B332F60064CFB1 /* EatersCell.xib */,
+				48FE0A6E21B5B79C0064CFB1 /* EateryDetailViewCell.swift */,
+				48FE0A6F21B5B79C0064CFB1 /* EateryDetailViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		48FE0A5621B5AAA20064CFB1 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A4721B330730064CFB1 /* Model */,
+				48FE0A4821B3307D0064CFB1 /* Controller */,
+				48FE0A4921B3308B0064CFB1 /* Configurator */,
+				48FE0A4A21B330950064CFB1 /* View */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		48FE0A5721B5AAF10064CFB1 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A6821B5AB100064CFB1 /* Model */,
+				48FE0A6921B5AB180064CFB1 /* Controller */,
+				48FE0A6A21B5AB210064CFB1 /* Configurator */,
+				48FE0A6B21B5AB280064CFB1 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		48FE0A6821B5AB100064CFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A5821B5AB070064CFB1 /* DetailsModelOutput.swift */,
+				48FE0A5D21B5AB070064CFB1 /* DetailsModel.swift */,
+				48FE0A5E21B5AB070064CFB1 /* DetailsModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FE0A6921B5AB180064CFB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A5921B5AB070064CFB1 /* DetailsViewControllerInput.swift */,
+				48FE0A5B21B5AB070064CFB1 /* DetailsViewController.swift */,
+				48FE0A7221B5BA490064CFB1 /* DetailsDataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48FE0A6A21B5AB210064CFB1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A5A21B5AB070064CFB1 /* DetailsModuleInitializer.swift */,
+				48FE0A5F21B5AB070064CFB1 /* DetailsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48FE0A6B21B5AB280064CFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A5C21B5AB070064CFB1 /* DetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FE0A7121B5B79C0064CFB1 /* EateryDetailViewCell.xib in Resources */,
 				48FE0A1321B32F350064CFB1 /* LaunchScreen.storyboard in Resources */,
 				48FE0A1021B32F350064CFB1 /* Assets.xcassets in Resources */,
 				48FE0A0E21B32F320064CFB1 /* Main.storyboard in Resources */,
@@ -335,17 +420,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FE0A6D21B5B2430064CFB1 /* Restaurant.swift in Sources */,
 				48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */,
+				48FE0A6121B5AB070064CFB1 /* DetailsViewControllerInput.swift in Sources */,
 				48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */,
+				48FE0A6521B5AB070064CFB1 /* DetailsModel.swift in Sources */,
+				48FE0A6721B5AB070064CFB1 /* DetailsModuleConfigurator.swift in Sources */,
+				48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */,
 				48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */,
 				48FE0A4121B330640064CFB1 /* EatersModuleInitializer.swift in Sources */,
 				48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */,
 				48FE0A4321B330640064CFB1 /* EatersView.swift in Sources */,
+				48FE0A6221B5AB070064CFB1 /* DetailsModuleInitializer.swift in Sources */,
 				48FE0A4021B330640064CFB1 /* EatersViewControllerInput.swift in Sources */,
+				48FE0A6021B5AB070064CFB1 /* DetailsModelOutput.swift in Sources */,
+				48FE0A6621B5AB070064CFB1 /* DetailsModelInput.swift in Sources */,
 				48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */,
-				48FE0A4C21B330BF0064CFB1 /* DataSource.swift in Sources */,
+				48FE0A4C21B330BF0064CFB1 /* EatersDataSource.swift in Sources */,
 				48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */,
+				48FE0A6421B5AB070064CFB1 /* DetailsView.swift in Sources */,
 				48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */,
+				48FE0A7321B5BA490064CFB1 /* DetailsDataSource.swift in Sources */,
+				48FE0A6321B5AB070064CFB1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
