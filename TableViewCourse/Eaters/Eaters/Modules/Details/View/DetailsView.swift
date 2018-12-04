@@ -11,7 +11,7 @@ import UIKit
 protocol DetailsViewInput: class {
     func SetImage (image: String)
     var tableView: UITableView! {get}
-
+    func setButtonImage(image: String)
 }
 
 final class DetailsView: UIView {
@@ -19,10 +19,15 @@ final class DetailsView: UIView {
     @IBOutlet weak var detailsTable: UITableView!
     @IBOutlet weak var rateButton: UIButton!
     
+    @IBOutlet weak var mapButton: UIButton!
     override func awakeFromNib() {
-        rateButton.layer.cornerRadius = 5
-        rateButton.layer.borderWidth = 1
-        rateButton.layer.borderColor = UIColor.white.cgColor
+        let buttons = [rateButton,mapButton]
+        for button in buttons {
+            guard let `button` = button else { break }
+            button.layer.cornerRadius = 5
+            button.layer.borderWidth = 1
+            button.layer.borderColor = UIColor.white.cgColor
+        }
     }
 }
 
@@ -32,5 +37,9 @@ extension DetailsView: DetailsViewInput {
         self.bigImage.image = UIImage(named: image)
     }
     
-     var tableView: UITableView! {return detailsTable}
+    var tableView: UITableView! {return detailsTable}
+    
+    func setButtonImage(image: String){
+        rateButton.setImage(UIImage(named: image), for: .normal)
+    }
 }

@@ -14,6 +14,7 @@ final class DetailsViewController: UIViewController {
     lazy var contentView: DetailsViewInput = { return view as! DetailsViewInput }()
     var imageName: String?
     var datasource: DetailsDataSource!
+    var rateImageName: String?
     
     override func viewDidLoad() {
         contentView.SetImage(image: imageName ?? "")
@@ -26,6 +27,17 @@ final class DetailsViewController: UIViewController {
 //        navigationController?.setNavigationBarHidden(false, animated: true)
 //    }
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        guard let image = rateImageName else {return}
+        contentView.setButtonImage(image: image)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mapSegue" {
+            let vc = segue.destination as! MapViewController
+            vc.restaurant = self.datasource.restaurant
+        }
+    }
 }
 
 // MARK: - DetailsModelOutput
@@ -37,6 +49,10 @@ extension DetailsViewController: DetailsViewControllerInput {
     func setData(_ restaurant: Restaurant) {
         self.datasource.restaurant = restaurant
         self.imageName = restaurant.image
+    }
+    
+    func setRateData(_ image: String){
+        self.rateImageName = image
     }
     
 }

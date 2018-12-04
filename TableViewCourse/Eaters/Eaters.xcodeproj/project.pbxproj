@@ -36,6 +36,23 @@
 		48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A6E21B5B79C0064CFB1 /* EateryDetailViewCell.swift */; };
 		48FE0A7121B5B79C0064CFB1 /* EateryDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A6F21B5B79C0064CFB1 /* EateryDetailViewCell.xib */; };
 		48FE0A7321B5BA490064CFB1 /* DetailsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7221B5BA490064CFB1 /* DetailsDataSource.swift */; };
+		48FE0A7D21B68E130064CFB1 /* RateModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7521B68E130064CFB1 /* RateModelOutput.swift */; };
+		48FE0A7E21B68E130064CFB1 /* RateViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7621B68E130064CFB1 /* RateViewControllerInput.swift */; };
+		48FE0A7F21B68E130064CFB1 /* RateModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7721B68E130064CFB1 /* RateModuleInitializer.swift */; };
+		48FE0A8021B68E130064CFB1 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7821B68E130064CFB1 /* RateViewController.swift */; };
+		48FE0A8121B68E130064CFB1 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7921B68E130064CFB1 /* RateView.swift */; };
+		48FE0A8221B68E130064CFB1 /* RateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7A21B68E130064CFB1 /* RateModel.swift */; };
+		48FE0A8321B68E130064CFB1 /* RateModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7B21B68E130064CFB1 /* RateModelInput.swift */; };
+		48FE0A8421B68E130064CFB1 /* RateModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A7C21B68E130064CFB1 /* RateModuleConfigurator.swift */; };
+		48FE0A9221B6F8B60064CFB1 /* MapModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8A21B6F8B60064CFB1 /* MapModelOutput.swift */; };
+		48FE0A9321B6F8B60064CFB1 /* MapViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8B21B6F8B60064CFB1 /* MapViewControllerInput.swift */; };
+		48FE0A9421B6F8B60064CFB1 /* MapModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8C21B6F8B60064CFB1 /* MapModuleInitializer.swift */; };
+		48FE0A9521B6F8B60064CFB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8D21B6F8B60064CFB1 /* MapViewController.swift */; };
+		48FE0A9621B6F8B60064CFB1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8E21B6F8B60064CFB1 /* MapView.swift */; };
+		48FE0A9721B6F8B60064CFB1 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A8F21B6F8B60064CFB1 /* MapModel.swift */; };
+		48FE0A9821B6F8B60064CFB1 /* MapModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A9021B6F8B60064CFB1 /* MapModelInput.swift */; };
+		48FE0A9921B6F8B60064CFB1 /* MapModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A9121B6F8B60064CFB1 /* MapModuleConfigurator.swift */; };
+		48FE0AA021B6F9870064CFB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE0A9F21B6F9870064CFB1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +108,23 @@
 		48FE0A6E21B5B79C0064CFB1 /* EateryDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryDetailViewCell.swift; sourceTree = "<group>"; };
 		48FE0A6F21B5B79C0064CFB1 /* EateryDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EateryDetailViewCell.xib; sourceTree = "<group>"; };
 		48FE0A7221B5BA490064CFB1 /* DetailsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDataSource.swift; sourceTree = "<group>"; };
+		48FE0A7521B68E130064CFB1 /* RateModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModelOutput.swift; sourceTree = "<group>"; };
+		48FE0A7621B68E130064CFB1 /* RateViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewControllerInput.swift; sourceTree = "<group>"; };
+		48FE0A7721B68E130064CFB1 /* RateModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModuleInitializer.swift; sourceTree = "<group>"; };
+		48FE0A7821B68E130064CFB1 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		48FE0A7921B68E130064CFB1 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		48FE0A7A21B68E130064CFB1 /* RateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModel.swift; sourceTree = "<group>"; };
+		48FE0A7B21B68E130064CFB1 /* RateModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModelInput.swift; sourceTree = "<group>"; };
+		48FE0A7C21B68E130064CFB1 /* RateModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateModuleConfigurator.swift; sourceTree = "<group>"; };
+		48FE0A8A21B6F8B60064CFB1 /* MapModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelOutput.swift; sourceTree = "<group>"; };
+		48FE0A8B21B6F8B60064CFB1 /* MapViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerInput.swift; sourceTree = "<group>"; };
+		48FE0A8C21B6F8B60064CFB1 /* MapModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModuleInitializer.swift; sourceTree = "<group>"; };
+		48FE0A8D21B6F8B60064CFB1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		48FE0A8E21B6F8B60064CFB1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		48FE0A8F21B6F8B60064CFB1 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		48FE0A9021B6F8B60064CFB1 /* MapModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelInput.swift; sourceTree = "<group>"; };
+		48FE0A9121B6F8B60064CFB1 /* MapModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModuleConfigurator.swift; sourceTree = "<group>"; };
+		48FE0A9F21B6F9870064CFB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FE0AA021B6F9870064CFB1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +160,7 @@
 				48FE0A1C21B32F350064CFB1 /* EatersTests */,
 				48FE0A2721B32F350064CFB1 /* EatersUITests */,
 				48FE0A0621B32F310064CFB1 /* Products */,
+				48FE0A9E21B6F9870064CFB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,8 +210,11 @@
 		48FE0A3621B330460064CFB1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				48FE0AA121B70BA00064CFB1 /* Adder */,
+				48FE0A8921B6F8A50064CFB1 /* Map */,
+				48FE0A7421B68DF70064CFB1 /* Rate */,
 				48FE0A5721B5AAF10064CFB1 /* Details */,
-				48FE0A5621B5AAA20064CFB1 /* StartScreen */,
+				48FE0A5621B5AAA20064CFB1 /* Eaters */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -228,7 +267,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		48FE0A5621B5AAA20064CFB1 /* StartScreen */ = {
+		48FE0A5621B5AAA20064CFB1 /* Eaters */ = {
 			isa = PBXGroup;
 			children = (
 				48FE0A4721B330730064CFB1 /* Model */,
@@ -236,7 +275,7 @@
 				48FE0A4921B3308B0064CFB1 /* Configurator */,
 				48FE0A4A21B330950064CFB1 /* View */,
 			);
-			path = StartScreen;
+			path = Eaters;
 			sourceTree = "<group>";
 		};
 		48FE0A5721B5AAF10064CFB1 /* Details */ = {
@@ -285,6 +324,115 @@
 				48FE0A5C21B5AB070064CFB1 /* DetailsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		48FE0A7421B68DF70064CFB1 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A8521B68E1A0064CFB1 /* Model */,
+				48FE0A8621B68E230064CFB1 /* Controller */,
+				48FE0A8721B68E2B0064CFB1 /* Configurator */,
+				48FE0A8821B68E340064CFB1 /* View */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		48FE0A8521B68E1A0064CFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A7521B68E130064CFB1 /* RateModelOutput.swift */,
+				48FE0A7A21B68E130064CFB1 /* RateModel.swift */,
+				48FE0A7B21B68E130064CFB1 /* RateModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FE0A8621B68E230064CFB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A7621B68E130064CFB1 /* RateViewControllerInput.swift */,
+				48FE0A7821B68E130064CFB1 /* RateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48FE0A8721B68E2B0064CFB1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A7721B68E130064CFB1 /* RateModuleInitializer.swift */,
+				48FE0A7C21B68E130064CFB1 /* RateModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48FE0A8821B68E340064CFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A7921B68E130064CFB1 /* RateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FE0A8921B6F8A50064CFB1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A9A21B6F8BD0064CFB1 /* Model */,
+				48FE0A9B21B6F8C90064CFB1 /* Controller */,
+				48FE0A9D21B6F8D80064CFB1 /* Configurator */,
+				48FE0A9C21B6F8D10064CFB1 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		48FE0A9A21B6F8BD0064CFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A8A21B6F8B60064CFB1 /* MapModelOutput.swift */,
+				48FE0A8F21B6F8B60064CFB1 /* MapModel.swift */,
+				48FE0A9021B6F8B60064CFB1 /* MapModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48FE0A9B21B6F8C90064CFB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A8B21B6F8B60064CFB1 /* MapViewControllerInput.swift */,
+				48FE0A8D21B6F8B60064CFB1 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48FE0A9C21B6F8D10064CFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A8E21B6F8B60064CFB1 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48FE0A9D21B6F8D80064CFB1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A8C21B6F8B60064CFB1 /* MapModuleInitializer.swift */,
+				48FE0A9121B6F8B60064CFB1 /* MapModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		48FE0A9E21B6F9870064CFB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48FE0A9F21B6F9870064CFB1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48FE0AA121B70BA00064CFB1 /* Adder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +503,11 @@
 				TargetAttributes = {
 					48FE0A0421B32F310064CFB1 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					48FE0A1821B32F350064CFB1 = {
 						CreatedOnToolsVersion = 10.1;
@@ -424,24 +577,40 @@
 				48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */,
 				48FE0A6121B5AB070064CFB1 /* DetailsViewControllerInput.swift in Sources */,
 				48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */,
+				48FE0A9321B6F8B60064CFB1 /* MapViewControllerInput.swift in Sources */,
 				48FE0A6521B5AB070064CFB1 /* DetailsModel.swift in Sources */,
+				48FE0A8321B68E130064CFB1 /* RateModelInput.swift in Sources */,
+				48FE0A9821B6F8B60064CFB1 /* MapModelInput.swift in Sources */,
+				48FE0A9621B6F8B60064CFB1 /* MapView.swift in Sources */,
+				48FE0A7F21B68E130064CFB1 /* RateModuleInitializer.swift in Sources */,
 				48FE0A6721B5AB070064CFB1 /* DetailsModuleConfigurator.swift in Sources */,
 				48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */,
+				48FE0A7D21B68E130064CFB1 /* RateModelOutput.swift in Sources */,
 				48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */,
 				48FE0A4121B330640064CFB1 /* EatersModuleInitializer.swift in Sources */,
 				48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */,
 				48FE0A4321B330640064CFB1 /* EatersView.swift in Sources */,
 				48FE0A6221B5AB070064CFB1 /* DetailsModuleInitializer.swift in Sources */,
+				48FE0A9221B6F8B60064CFB1 /* MapModelOutput.swift in Sources */,
+				48FE0A9921B6F8B60064CFB1 /* MapModuleConfigurator.swift in Sources */,
 				48FE0A4021B330640064CFB1 /* EatersViewControllerInput.swift in Sources */,
 				48FE0A6021B5AB070064CFB1 /* DetailsModelOutput.swift in Sources */,
 				48FE0A6621B5AB070064CFB1 /* DetailsModelInput.swift in Sources */,
 				48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */,
+				48FE0A8021B68E130064CFB1 /* RateViewController.swift in Sources */,
+				48FE0A8221B68E130064CFB1 /* RateModel.swift in Sources */,
 				48FE0A4C21B330BF0064CFB1 /* EatersDataSource.swift in Sources */,
+				48FE0A8121B68E130064CFB1 /* RateView.swift in Sources */,
 				48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */,
+				48FE0A7E21B68E130064CFB1 /* RateViewControllerInput.swift in Sources */,
+				48FE0A9721B6F8B60064CFB1 /* MapModel.swift in Sources */,
 				48FE0A6421B5AB070064CFB1 /* DetailsView.swift in Sources */,
+				48FE0A8421B68E130064CFB1 /* RateModuleConfigurator.swift in Sources */,
+				48FE0A9421B6F8B60064CFB1 /* MapModuleInitializer.swift in Sources */,
 				48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */,
 				48FE0A7321B5BA490064CFB1 /* DetailsDataSource.swift in Sources */,
 				48FE0A6321B5AB070064CFB1 /* DetailsViewController.swift in Sources */,
+				48FE0A9521B6F8B60064CFB1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

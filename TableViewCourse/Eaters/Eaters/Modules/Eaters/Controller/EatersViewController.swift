@@ -25,9 +25,7 @@ final class EatersViewController: UIViewController {
         }
     }
     
-    @IBAction func unwind(segue: UIStoryboardSegue) {
-        
-    }
+    @IBAction func close (segue: UIStoryboardSegue){}
 
 }
 

@@ -8,4 +8,5 @@
 
 protocol DetailsViewControllerInput: class {
     func setData(_ restaurant: Restaurant)
+    func setRateData(_ image: String)
 }
