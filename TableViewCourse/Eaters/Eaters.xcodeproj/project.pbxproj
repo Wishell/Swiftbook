@@ -53,6 +53,7 @@
 		48FE0A9821B6F8B60064CFB1 /* MapModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A9021B6F8B60064CFB1 /* MapModelInput.swift */; };
 		48FE0A9921B6F8B60064CFB1 /* MapModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A9121B6F8B60064CFB1 /* MapModuleConfigurator.swift */; };
 		48FE0AA021B6F9870064CFB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE0A9F21B6F9870064CFB1 /* MapKit.framework */; };
+		48FE0AA321B70E210064CFB1 /* NewEateryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0AA221B70E210064CFB1 /* NewEateryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		48FE0A9021B6F8B60064CFB1 /* MapModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModelInput.swift; sourceTree = "<group>"; };
 		48FE0A9121B6F8B60064CFB1 /* MapModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModuleConfigurator.swift; sourceTree = "<group>"; };
 		48FE0A9F21B6F9870064CFB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		48FE0AA221B70E210064CFB1 /* NewEateryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEateryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +433,7 @@
 		48FE0AA121B70BA00064CFB1 /* Adder */ = {
 			isa = PBXGroup;
 			children = (
+				48FE0AA221B70E210064CFB1 /* NewEateryTableViewController.swift */,
 			);
 			path = Adder;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				48FE0A6D21B5B2430064CFB1 /* Restaurant.swift in Sources */,
 				48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */,
 				48FE0A6121B5AB070064CFB1 /* DetailsViewControllerInput.swift in Sources */,
+				48FE0AA321B70E210064CFB1 /* NewEateryTableViewController.swift in Sources */,
 				48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */,
 				48FE0A9321B6F8B60064CFB1 /* MapViewControllerInput.swift in Sources */,
 				48FE0A6521B5AB070064CFB1 /* DetailsModel.swift in Sources */,
