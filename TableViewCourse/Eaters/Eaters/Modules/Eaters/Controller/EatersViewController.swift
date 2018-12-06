@@ -70,8 +70,8 @@ extension EatersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let share = UITableViewRowAction(style: .default, title: "share") { (action, IndexPath) in
-            let defaultText = "I am at \(self.dataSource.restaurants[indexPath.row].name)"
-            if let image = UIImage(named: self.dataSource.restaurants[indexPath.row].image) {
+            let defaultText = "I am at \(self.dataSource.restaurants[indexPath.row].name!)"
+            if let image = UIImage(data:self.dataSource.restaurants[indexPath.row].image!) {
                 let activityController = UIActivityViewController(activityItems: [defaultText,image], applicationActivities: nil)
                 self.present(activityController, animated: true, completion: nil)
             }

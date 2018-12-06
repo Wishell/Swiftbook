@@ -12,12 +12,12 @@ final class DetailsViewController: UIViewController {
     
     var model: DetailsModelInput!
     lazy var contentView: DetailsViewInput = { return view as! DetailsViewInput }()
-    var imageName: String?
+    var restImage: Data?
     var datasource: DetailsDataSource!
     var rateImageName: String?
     
     override func viewDidLoad() {
-        contentView.SetImage(image: imageName ?? "")
+        contentView.SetImage(image: restImage!)
         datasource.attach(table: contentView.tableView)
         title = datasource.restaurant?.name
     }
@@ -48,7 +48,7 @@ extension DetailsViewController: DetailsViewControllerInput {
     
     func setData(_ restaurant: Restaurant) {
         self.datasource.restaurant = restaurant
-        self.imageName = restaurant.image
+        self.restImage = restaurant.image! as Data
     }
     
     func setRateData(_ image: String){

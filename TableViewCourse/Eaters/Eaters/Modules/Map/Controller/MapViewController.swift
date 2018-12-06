@@ -20,7 +20,7 @@ final class MapViewController: UIViewController {
         let geocoder = CLGeocoder()
         
         contentView.mapView?.delegate = self
-        geocoder.geocodeAddressString(restaurant.location) { (placemarks, error) in
+        geocoder.geocodeAddressString(restaurant.location!) { (placemarks, error) in
             
             guard `error` == nil else { return }
             guard let `placemarks` = placemarks else { return }
@@ -59,7 +59,7 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         let rightImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        rightImage.image = UIImage(named: restaurant.image)
+        rightImage.image = UIImage(data: restaurant.image! as Data)
         annotationView?.rightCalloutAccessoryView = rightImage
         
         annotationView?.pinTintColor = #colorLiteral(red: 0, green: 0.9109624028, blue: 0.4841304421, alpha: 1)

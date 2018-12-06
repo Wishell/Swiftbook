@@ -215,6 +215,9 @@
                                                     <state key="normal" title="Нет">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="isVisitedTap:" destination="7da-8x-dg1" eventType="touchUpInside" id="3ZP-QE-Fat"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1F-cY-ev7">
                                                     <rect key="frame" x="16" y="34" width="66" height="33"/>
@@ -227,6 +230,9 @@
                                                     <state key="normal" title="Да">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="isVisitedTap:" destination="7da-8x-dg1" eventType="touchUpInside" id="eyo-Ct-ybu"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -252,12 +258,22 @@
                     <navigationItem key="navigationItem" id="4ih-Ck-jJ4">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="U2j-Vv-Ekc">
                             <connections>
-                                <segue destination="IKc-4C-8iM" kind="unwind" unwindAction="closeWithSegue:" id="q0p-Qh-Yei"/>
+                                <segue destination="IKc-4C-8iM" kind="unwind" identifier="closeSegue" unwindAction="closeWithSegue:" id="q0p-Qh-Yei"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GeY-MJ-RsD">
+                            <connections>
+                                <action selector="SaveButtonTap:" destination="7da-8x-dg1" id="zWo-xw-2bF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="ZOj-Aj-Mq0" id="sJ7-Dd-QZt"/>
+                        <outlet property="locationText" destination="nB8-pO-4NF" id="c3b-Kl-qOj"/>
+                        <outlet property="nameText" destination="S5B-DF-T3q" id="BNT-2h-jVA"/>
+                        <outlet property="noButton" destination="PHy-YN-BDi" id="w49-XI-pqq"/>
+                        <outlet property="typeText" destination="Hb6-QO-Q3g" id="CT2-aA-ZuC"/>
+                        <outlet property="yesButton" destination="h1F-cY-ev7" id="kfo-Br-1gc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hso-6B-9hK" userLabel="First Responder" sceneMemberID="firstResponder"/>
