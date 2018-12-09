@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		482A695C21B9BB5C00720CC8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A695B21B9BB5C00720CC8 /* CoreDataStack.swift */; };
-		482A695F21B9BC4800720CC8 /* EatersData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 482A695D21B9BC4800720CC8 /* EatersData.xcdatamodeld */; };
+		482A695F21B9BC4800720CC8 /* Eaters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 482A695D21B9BC4800720CC8 /* Eaters.xcdatamodeld */; };
 		48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A0821B32F320064CFB1 /* AppDelegate.swift */; };
 		48FE0A0E21B32F320064CFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0C21B32F320064CFB1 /* Main.storyboard */; };
 		48FE0A1021B32F350064CFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0F21B32F350064CFB1 /* Assets.xcassets */; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				482A695B21B9BB5C00720CC8 /* CoreDataStack.swift */,
-				482A695D21B9BC4800720CC8 /* EatersData.xcdatamodeld */,
+				482A695D21B9BC4800720CC8 /* Eaters.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -602,7 +602,7 @@
 				48FE0A9621B6F8B60064CFB1 /* MapView.swift in Sources */,
 				48FE0A7F21B68E130064CFB1 /* RateModuleInitializer.swift in Sources */,
 				48FE0A6721B5AB070064CFB1 /* DetailsModuleConfigurator.swift in Sources */,
-				482A695F21B9BC4800720CC8 /* EatersData.xcdatamodeld in Sources */,
+				482A695F21B9BC4800720CC8 /* Eaters.xcdatamodeld in Sources */,
 				48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */,
 				48FE0A7D21B68E130064CFB1 /* RateModelOutput.swift in Sources */,
 				48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */,
@@ -961,13 +961,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		482A695D21B9BC4800720CC8 /* EatersData.xcdatamodeld */ = {
+		482A695D21B9BC4800720CC8 /* Eaters.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				482A695E21B9BC4800720CC8 /* EatersData.xcdatamodel */,
 			);
 			currentVersion = 482A695E21B9BC4800720CC8 /* EatersData.xcdatamodel */;
-			path = EatersData.xcdatamodeld;
+			path = Eaters.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

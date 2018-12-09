@@ -19,12 +19,30 @@ class NewEateryTableViewController: UITableViewController {
     
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
-    
+    var isVisited = false
     @IBAction func SaveButtonTap(_ sender: Any) {
         if nameText.text == "" || locationText.text == "" || typeText.text == "" {
             print ("Not all text fields are filled")
+        } else {
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.coreData.persistentContainer.viewContext {
+                let restaurant = Restaurant(context: context)
+                restaurant.name = nameText.text
+                restaurant.location = locationText.text
+                restaurant.type = typeText.text
+                restaurant.isVisited = isVisited
+                if let image = imageView.image {
+                    restaurant.image = image.pngData()
+                }
+                do {
+                    try context.save()
+                } catch let error {
+                    print("Can`t Save data. Reason: \(error), \(error.localizedDescription)")
+                }
+                
+            }
+            performSegue(withIdentifier: "closeSegue", sender: self)
         }
-        performSegue(withIdentifier: "closeSegue", sender: self)
+        
     }
     
     @IBAction func isVisitedTap(_ sender: UIButton) {
@@ -32,10 +50,11 @@ class NewEateryTableViewController: UITableViewController {
         case yesButton:
             yesButton.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
             noButton.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
-            
+            isVisited = true
         case noButton:
             yesButton.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
             noButton.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+            isVisited = false
         default: break
         }
     }

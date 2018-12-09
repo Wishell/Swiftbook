@@ -11,29 +11,21 @@ import UIKit
 class EatersDataSource: NSObject {
     
     var restaurants: [Restaurant] = []
-//        Restaurant(name: "Ogonёk Grill&Bar", type: "ресторан", location: "Уфа, бульвар ываывааавввввывыаываываывавпроывы ываывароывпраофпрфоыдароыфдр" , image: "ogonek.jpg", isVisited: false),
-//        Restaurant(name: "Елу", type: "ресторан", location: "Уфа", image: "elu.jpg", isVisited: false),
-//        Restaurant(name: "Bonsai", type: "ресторан", location: "Уфа", image: "bonsai.jpg", isVisited: false),
-//        Restaurant(name: "Дастархан", type: "ресторан", location: "Уфа", image: "dastarhan.jpg", isVisited: false),
-//        Restaurant(name: "Индокитай", type: "ресторан", location: "Уфа", image: "indokitay.jpg", isVisited: false),
-//        Restaurant(name: "X.O", type: "ресторан-клуб", location: "Уфа", image: "x.o.jpg", isVisited: false),
-//        Restaurant(name: "Балкан Гриль", type: "ресторан", location: "Уфа", image: "balkan.jpg", isVisited: false),
-//        Restaurant(name: "Respublica", type: "ресторан", location: "Уфа", image: "respublika.jpg", isVisited: false),
-//        Restaurant(name: "Speak Easy", type: "ресторанный комплекс", location: "Уфа", image: "speakeasy.jpg", isVisited: false),
-//        Restaurant(name: "Morris Pub", type: "ресторан", location: "Уфа", image: "morris.jpg", isVisited: false),
-//        Restaurant(name: "Вкусные истории", type: "ресторан", location: "Уфа", image: "istorii.jpg", isVisited: false),
-//        Restaurant(name: "Классик", type: "ресторан", location: "Уфа", image: "klassik.jpg", isVisited: false),
-//        Restaurant(name: "Love&Life", type: "ресторан", location: "Уфа", image: "love.jpg", isVisited: false),
-//        Restaurant(name: "Шок", type: "ресторан", location: "Уфа", image: "shok.jpg", isVisited: false),
-//        Restaurant(name: "Бочка", type: "ресторан", location:  "Уфа", image: "bochka.jpg", isVisited: false)]
-//
+    var filteredResultArray: [Restaurant] = []
+    var searchController: UISearchController!
     
-    func attach (to table: UITableView) {
+    func attach (to table: UITableView, searchDelegate: UISearchResultsUpdating) {
         table.dataSource = self
         let nib = UINib(nibName: "EatersCell", bundle: nil)
         table.register(nib, forCellReuseIdentifier: "EatersCell")
         table.estimatedRowHeight = 85
         table.rowHeight = UITableView.automaticDimension
+        
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = searchDelegate
+        searchController.dimsBackgroundDuringPresentation  = false
+        table.tableHeaderView = searchController.searchBar
+        
     }
     
 
@@ -41,19 +33,35 @@ class EatersDataSource: NSObject {
 
 extension EatersDataSource: UITableViewDataSource {
     
+    func restaurantToDisplay(indexPath: IndexPath) -> Restaurant {
+        let restaurant: Restaurant
+        if searchController.isActive && searchController.searchBar.text != ""{
+            restaurant = filteredResultArray[indexPath.row]
+        } else {
+            restaurant = restaurants[indexPath.row]
+        }
+        return restaurant
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredResultArray.count
+        }
         return restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EatersCell", for: indexPath) as! EatersCell
-        cell.icon.image = UIImage(data: restaurants[indexPath.row].image! as Data)
+        let restaurant = restaurantToDisplay(indexPath: indexPath)
+
+        
+        cell.icon.image = UIImage(data: restaurant.image! as Data)
         cell.icon.layer.cornerRadius = 32.5
         cell.icon.clipsToBounds = true
-        cell.LName.text = restaurants[indexPath.row].name
-        cell.Llocation.text = restaurants[indexPath.row].location
-        cell.Ltype.text = restaurants[indexPath.row].type
-        cell.accessoryType = restaurants[indexPath.row].isVisited ? .checkmark: .none
+        cell.LName.text = restaurant.name
+        cell.Llocation.text = restaurant.location
+        cell.Ltype.text = restaurant.type
+        cell.accessoryType = restaurant.isVisited ? .checkmark: .none
         
         return cell
     }
@@ -70,3 +78,4 @@ extension EatersDataSource: UITableViewDataSource {
 
 
 }
+

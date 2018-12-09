@@ -11,7 +11,7 @@ import UIKit
 protocol DetailsViewInput: class {
     func SetImage (image: Data)
     var tableView: UITableView! {get}
-    func setButtonImage(image: String)
+    func setButtonImage(image: Data)
 }
 
 final class DetailsView: UIView {
@@ -39,7 +39,7 @@ extension DetailsView: DetailsViewInput {
     
     var tableView: UITableView! {return detailsTable}
     
-    func setButtonImage(image: String){
-        rateButton.setImage(UIImage(named: image), for: .normal)
+    func setButtonImage(image: Data){
+        rateButton.setImage(UIImage(data: image), for: .normal)
     }
 }
