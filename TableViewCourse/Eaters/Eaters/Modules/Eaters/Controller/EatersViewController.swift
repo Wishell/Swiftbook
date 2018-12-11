@@ -41,7 +41,15 @@ final class EatersViewController: UIViewController {
         definesPresentationContext = true
 
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let userDefaults = UserDefaults.standard
+        let wasIntroWatched = userDefaults.bool(forKey: "wasIntroWatched")
+        guard !wasIntroWatched else {return}
+        if let pageVC = storyboard?.instantiateViewController(withIdentifier: "pageViewController") as? PageViewController{
+            present(pageVC, animated: true, completion: nil)
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetailsSeque" {
             let destinationVc = segue.destination as! DetailsViewController

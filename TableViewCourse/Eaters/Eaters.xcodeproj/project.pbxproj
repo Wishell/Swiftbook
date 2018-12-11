@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		482A695C21B9BB5C00720CC8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A695B21B9BB5C00720CC8 /* CoreDataStack.swift */; };
 		482A695F21B9BC4800720CC8 /* Eaters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 482A695D21B9BC4800720CC8 /* Eaters.xcdatamodeld */; };
+		489D096221BF0AC500BB3E37 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096121BF0AC500BB3E37 /* ContentViewController.swift */; };
+		489D096421BF0AE000BB3E37 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096321BF0AE000BB3E37 /* PageViewController.swift */; };
+		489D096F21C0538F00BB3E37 /* AboutModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096721C0538F00BB3E37 /* AboutModelOutput.swift */; };
+		489D097021C0538F00BB3E37 /* AboutViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096821C0538F00BB3E37 /* AboutViewControllerInput.swift */; };
+		489D097121C0538F00BB3E37 /* AboutModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096921C0538F00BB3E37 /* AboutModuleInitializer.swift */; };
+		489D097221C0538F00BB3E37 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096A21C0538F00BB3E37 /* AboutViewController.swift */; };
+		489D097321C0538F00BB3E37 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096B21C0538F00BB3E37 /* AboutView.swift */; };
+		489D097421C0538F00BB3E37 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096C21C0538F00BB3E37 /* AboutModel.swift */; };
+		489D097521C0538F00BB3E37 /* AboutModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096D21C0538F00BB3E37 /* AboutModelInput.swift */; };
+		489D097621C0538F00BB3E37 /* AboutModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D096E21C0538F00BB3E37 /* AboutModuleConfigurator.swift */; };
+		489D097B21C0588B00BB3E37 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D097A21C0588B00BB3E37 /* AboutTableViewController.swift */; };
+		489D097D21C05E9800BB3E37 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D097C21C05E9800BB3E37 /* WebViewController.swift */; };
 		48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE0A0821B32F320064CFB1 /* AppDelegate.swift */; };
 		48FE0A0E21B32F320064CFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0C21B32F320064CFB1 /* Main.storyboard */; };
 		48FE0A1021B32F350064CFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE0A0F21B32F350064CFB1 /* Assets.xcassets */; };
@@ -78,6 +90,18 @@
 /* Begin PBXFileReference section */
 		482A695B21B9BB5C00720CC8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		482A695E21B9BC4800720CC8 /* EatersData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatersData.xcdatamodel; sourceTree = "<group>"; };
+		489D096121BF0AC500BB3E37 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		489D096321BF0AE000BB3E37 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		489D096721C0538F00BB3E37 /* AboutModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModelOutput.swift; sourceTree = "<group>"; };
+		489D096821C0538F00BB3E37 /* AboutViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewControllerInput.swift; sourceTree = "<group>"; };
+		489D096921C0538F00BB3E37 /* AboutModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModuleInitializer.swift; sourceTree = "<group>"; };
+		489D096A21C0538F00BB3E37 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		489D096B21C0538F00BB3E37 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		489D096C21C0538F00BB3E37 /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		489D096D21C0538F00BB3E37 /* AboutModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModelInput.swift; sourceTree = "<group>"; };
+		489D096E21C0538F00BB3E37 /* AboutModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModuleConfigurator.swift; sourceTree = "<group>"; };
+		489D097A21C0588B00BB3E37 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		489D097C21C05E9800BB3E37 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		48FE0A0521B32F310064CFB1 /* Eaters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eaters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FE0A0821B32F320064CFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FE0A0D21B32F320064CFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +192,63 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		489D096021BF0A8000BB3E37 /* PageVC */ = {
+			isa = PBXGroup;
+			children = (
+				489D096121BF0AC500BB3E37 /* ContentViewController.swift */,
+				489D096321BF0AE000BB3E37 /* PageViewController.swift */,
+			);
+			path = PageVC;
+			sourceTree = "<group>";
+		};
+		489D096521C0536600BB3E37 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				489D096621C0536F00BB3E37 /* Model */,
+				489D097721C0582000BB3E37 /* Controller */,
+				489D097821C0582900BB3E37 /* Configurator */,
+				489D097921C0583100BB3E37 /* View */,
+				489D097A21C0588B00BB3E37 /* AboutTableViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		489D096621C0536F00BB3E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				489D096C21C0538F00BB3E37 /* AboutModel.swift */,
+				489D096721C0538F00BB3E37 /* AboutModelOutput.swift */,
+				489D096D21C0538F00BB3E37 /* AboutModelInput.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		489D097721C0582000BB3E37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				489D096821C0538F00BB3E37 /* AboutViewControllerInput.swift */,
+				489D096A21C0538F00BB3E37 /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		489D097821C0582900BB3E37 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				489D096921C0538F00BB3E37 /* AboutModuleInitializer.swift */,
+				489D096E21C0538F00BB3E37 /* AboutModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		489D097921C0583100BB3E37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				489D096B21C0538F00BB3E37 /* AboutView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48FE09FC21B32F310064CFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -226,11 +307,14 @@
 		48FE0A3621B330460064CFB1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				489D096521C0536600BB3E37 /* About */,
+				489D096021BF0A8000BB3E37 /* PageVC */,
 				48FE0AA121B70BA00064CFB1 /* Adder */,
 				48FE0A8921B6F8A50064CFB1 /* Map */,
 				48FE0A7421B68DF70064CFB1 /* Rate */,
 				48FE0A5721B5AAF10064CFB1 /* Details */,
 				48FE0A5621B5AAA20064CFB1 /* Eaters */,
+				489D097C21C05E9800BB3E37 /* WebViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -590,32 +674,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489D097421C0538F00BB3E37 /* AboutModel.swift in Sources */,
 				48FE0A6D21B5B2430064CFB1 /* Restaurant.swift in Sources */,
 				48FE0A4221B330640064CFB1 /* EatersViewController.swift in Sources */,
 				48FE0A6121B5AB070064CFB1 /* DetailsViewControllerInput.swift in Sources */,
+				489D097021C0538F00BB3E37 /* AboutViewControllerInput.swift in Sources */,
 				48FE0AA321B70E210064CFB1 /* NewEateryTableViewController.swift in Sources */,
 				48FE0A4421B330640064CFB1 /* EatersModel.swift in Sources */,
 				48FE0A9321B6F8B60064CFB1 /* MapViewControllerInput.swift in Sources */,
 				48FE0A6521B5AB070064CFB1 /* DetailsModel.swift in Sources */,
 				48FE0A8321B68E130064CFB1 /* RateModelInput.swift in Sources */,
 				48FE0A9821B6F8B60064CFB1 /* MapModelInput.swift in Sources */,
+				489D097121C0538F00BB3E37 /* AboutModuleInitializer.swift in Sources */,
+				489D097D21C05E9800BB3E37 /* WebViewController.swift in Sources */,
 				48FE0A9621B6F8B60064CFB1 /* MapView.swift in Sources */,
 				48FE0A7F21B68E130064CFB1 /* RateModuleInitializer.swift in Sources */,
 				48FE0A6721B5AB070064CFB1 /* DetailsModuleConfigurator.swift in Sources */,
 				482A695F21B9BC4800720CC8 /* Eaters.xcdatamodeld in Sources */,
 				48FE0A7021B5B79C0064CFB1 /* EateryDetailViewCell.swift in Sources */,
+				489D097321C0538F00BB3E37 /* AboutView.swift in Sources */,
 				48FE0A7D21B68E130064CFB1 /* RateModelOutput.swift in Sources */,
 				48FE0A3F21B330640064CFB1 /* EatersModelOutput.swift in Sources */,
 				482A695C21B9BB5C00720CC8 /* CoreDataStack.swift in Sources */,
 				48FE0A4121B330640064CFB1 /* EatersModuleInitializer.swift in Sources */,
 				48FE0A4621B330640064CFB1 /* EatersModuleConfigurator.swift in Sources */,
 				48FE0A4321B330640064CFB1 /* EatersView.swift in Sources */,
+				489D097521C0538F00BB3E37 /* AboutModelInput.swift in Sources */,
 				48FE0A6221B5AB070064CFB1 /* DetailsModuleInitializer.swift in Sources */,
 				48FE0A9221B6F8B60064CFB1 /* MapModelOutput.swift in Sources */,
+				489D097B21C0588B00BB3E37 /* AboutTableViewController.swift in Sources */,
 				48FE0A9921B6F8B60064CFB1 /* MapModuleConfigurator.swift in Sources */,
+				489D097221C0538F00BB3E37 /* AboutViewController.swift in Sources */,
 				48FE0A4021B330640064CFB1 /* EatersViewControllerInput.swift in Sources */,
 				48FE0A6021B5AB070064CFB1 /* DetailsModelOutput.swift in Sources */,
 				48FE0A6621B5AB070064CFB1 /* DetailsModelInput.swift in Sources */,
+				489D096F21C0538F00BB3E37 /* AboutModelOutput.swift in Sources */,
+				489D096421BF0AE000BB3E37 /* PageViewController.swift in Sources */,
 				48FE0A0921B32F320064CFB1 /* AppDelegate.swift in Sources */,
 				48FE0A8021B68E130064CFB1 /* RateViewController.swift in Sources */,
 				48FE0A8221B68E130064CFB1 /* RateModel.swift in Sources */,
@@ -624,11 +718,13 @@
 				48FE0A4521B330640064CFB1 /* EatersModelInput.swift in Sources */,
 				48FE0A7E21B68E130064CFB1 /* RateViewControllerInput.swift in Sources */,
 				48FE0A9721B6F8B60064CFB1 /* MapModel.swift in Sources */,
+				489D096221BF0AC500BB3E37 /* ContentViewController.swift in Sources */,
 				48FE0A6421B5AB070064CFB1 /* DetailsView.swift in Sources */,
 				48FE0A8421B68E130064CFB1 /* RateModuleConfigurator.swift in Sources */,
 				48FE0A9421B6F8B60064CFB1 /* MapModuleInitializer.swift in Sources */,
 				48FE0A5021B332F60064CFB1 /* EatersCell.swift in Sources */,
 				48FE0A7321B5BA490064CFB1 /* DetailsDataSource.swift in Sources */,
+				489D097621C0538F00BB3E37 /* AboutModuleConfigurator.swift in Sources */,
 				48FE0A6321B5AB070064CFB1 /* DetailsViewController.swift in Sources */,
 				48FE0A9521B6F8B60064CFB1 /* MapViewController.swift in Sources */,
 			);
